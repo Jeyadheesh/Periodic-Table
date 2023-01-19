@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/3dd5091be5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gradient-to-tr from-cyan-200 to-blue-200">
+    <nav
+      class="flex justify-evenly bg-gradient-to-r from-blue-400 to-blue-600 text-white font-serif shadow-md shadow-blue-400"
+    >
+      <div
+        class="flex flex-col justify-end lg:p-1 md:p-1 p-1 font-bold lg:text-2xl md:text-xl text-[0.8rem]"
+      >
+        <a href="index.html">Table</a>
+      </div>
+      <div
+        class="tshadow lg:text-4xl md:text-3xl text-lg md:font-extrabold font-bold p-2"
+      >
+        PERIODIC TABLE
+      </div>
+      <div
+        class="flex flex-col justify-end lg:p-1 md:p-1 p-1 font-bold lg:text-2xl md:text-xl text-[0.8rem] border-b-4 border-black"
+      >
+        <a href="game.html">Game</a>
+      </div>
+    </nav>
+
+    <!-- Periodic Table -->
+    <section class="p-3 mx-auto lg:w-[98vw]">
+      <div class="ggd div1">
+        <!-- 1 -->
+        <!-- <div
+          class="w-full h-full text-center border border-black bg-gray-200 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-[0.9rem] lg:text-base text-[10px]"
+          >
+            45
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-semibold text-[0.7rem]"
+          >
+            H
+          </div>
+        </div> -->
+
+        <!-- <div
+          class="w-full h-full text-center border border-black bg-gray-200 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10 g2"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+        </div>
+
+        <div
+          class="w-full h-full text-center border border-black bg-gray-200 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        ></div>
+
+
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-cyan-200 via-cyan-400 to-cyan-500 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            Na
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div> -->
+
+        <!-- im -->
+
+        <!-- <div class="w-full h-full gpr1 ">
+          <div class="grid grid-rows-3">
+            <ul class="my-auto">
+              <div class="flex justify-center gap-1 md:gap-5">
+
+
+                <h3
+                  class="hidde my-auto text-[0.65rem] lg:text-lg md:text-base"
+                >
+                  Difficulty :
+                </h3>
+
+
+                <select
+                  class="hidde my-auto outline-none bg-transparent border-b-2 border-[rgb(73,145,204)] md:px-2 md:py-1 text-center text-[0.65rem] lg:text-lg md:text-base"
+                  name="selectDifficulty"
+                  id=""
+                >
+                  <option value="Easy">Easy</option>
+                  <option value="Medium">Medium</option>
+                  <option value="Hard">Hard</option>
+                </select>
+
+
+                <div class="flex gap-0.5 md:gap-1">
+                  <button
+                    class="hidde my-auto px-2 md:p-0.5 lg:p-1 md:px-4 lg:px-6 text-white text-[0.65rem] lg:text-lg md:text-base bg-gradient-to-tr from-blue-300 to-blue-600 rounded-md md:rounded-lg border-2 border-gray-500 transition duration-200 hover:border-2 hover:border-blue-700 hover:scale-[1.03] hover:transition-all hover:duration-200 active:scale-[1] shadowo1 hover:bg-gradient-to-tr hover:from-blue-600 hover:to-blue-300"
+                  >
+                    Play
+                  </button>
+
+
+
+                  <button
+                    class="hidden my-auto px-2 md:p-0.5 lg:p-1 md:px-4 lg:px-6 text-white text-[0.65rem] lg:text-lg md:text-base bg-gradient-to-tr from-blue-300 to-blue-600 rounded-md md:rounded-lg border-2 border-gray-500 transition duration-200 hover:border-2 hover:border-blue-700 hover:scale-[1.03] hover:transition-all hover:duration-200 active:scale-[1] shadowo1 hover:bg-gradient-to-tr hover:from-blue-600 hover:to-blue-300"
+                  >
+                    Quit
+                  </button>
+
+             
+
+                  <button
+                    class="hidden my-auto px-0.5 md:p-0.5 lg:p-1 md:px-4 lg:px-6 text-white text-[0.65rem] lg:text-lg md:text-base bg-gradient-to-tr from-blue-300 to-blue-600 rounded-md md:rounded-lg border-2 border-gray-500 transition duration-200 hover:border-2 hover:border-blue-700 hover:scale-[1.03] hover:transition-all hover:duration-200 active:scale-[1] shadowo1 hover:bg-gradient-to-tr hover:from-blue-600 hover:to-blue-300"
+                  >
+                    Play Again
+                  </button>
+
+          
+
+                  <div class="my-auto flex flex-col relative">
+                    <button class="text-[7px] md:text-base text-cyan-500 peer">
+                      <i
+                        class="border-2 border-gray-400 rounded-full fa-solid fa-circle-info hover:border-2 hover:border-red-400"
+                      ></i>
+                    </button>
+                    <div
+                      class="scale-0 absolute top-[100%] -left-[20vw] md:-left-[12vw] p-1 transition-all duration-200 peer-hover:transition-all peer-hover:duration-200 hover:scale-100 peer-hover:scale-100 bg-[rgba(3,3,3,0.8)] text-center text-yellow-400 text-xs w-[40vw] md:w-[25vw]"
+                    >
+                      <p>How to Play :</p>
+                      <p class="">
+                        An Element Name is Shown, Incorrect Guesses
+                        <span class="text-[red]">Decrease 50 Pts</span>. while
+                        Correct Guesses
+                        <span class="text-[#86ff41]">Increases 100 Pts</span>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+
+            <div class="row-span-2 flex justify-center items-center">
+              <div class="w-fit h-fit flex flex-col items-center">
+                <div
+                  class="bg-white py-0.5 px-3 md:p-1 md:px-3 lg:px-5 lg:p-2 w-full text-center rounded-t-lg shadow-sm shadow-black lg:text-lg md:text-base text-xs font-medium"
+                >
+                  <h3 class="hidde">
+                    <span>Highscore : </span
+                    ><span class="text-[green] font-bold">100</span>
+                  </h3>
+                  <h3 class="hidden text-violet-500 text-sm font-semibold">
+                    Hydrogen
+                  </h3>
+                </div>
+                <div
+                  class="bg-gray-300 py-0.5 px-3 md:p-1 md:px-3 lg:px-5 lg:p-2 w-full text-center rounded-b-lg shadow-sm shadow-black lg:text-lg md:text-base text-xs font-medium"
+                >
+                  <h3>
+                    Score :
+                    <span class="text-[green] font-bold">100</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full h-full border border-black mb-3 g5"></div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-lime-200 via-lime-400 to-lime-400 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-green-300 via-green-500 to-green-500 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-cyan-100 via-cyan-300 to-cyan-300 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-pink-200 via-pink-300 to-pink-300 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-violet-300 via-violet-400 to-violet-400 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-orange-300 via-orange-400 to-orange-400 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-blue-100 via-blue-300 to-blue-400 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div class="w-full h-full border border-black mb-3 g5"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3 emp">*</div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3 emp">**</div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div> -->
+      </div>
+      <div class="ggd1 div2 mt-3">
+        <!-- <div class="w-full h-full border border-black mb-3 emp"></div>
+        <div class="w-full h-full border border-black mb-3 emp"></div>
+        <div class="w-full h-full border border-black mb-3 g11 emp">*</div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3 emp"></div>
+        <div class="w-full h-full border border-black mb-3 emp"></div>
+        <div class="w-full h-full border border-black mb-3 emp g11">**</div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div> -->
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="mt-5 w-full lg:relative absolute bottom-0 bg-gradient-to-r from-blue-400 to-blue-600 p-1 border-t-2 border-white text-center"
+    >
+      <h3 class="text-white">Created By Jeyadheesh</h3>
+    </footer>
+
+    <script src="game.js"></script>
+  </body>
+</html>

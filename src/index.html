@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Periodic Table</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/3dd5091be5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-gradient-to-tr from-cyan-200 to-blue-200">
+    <!-- Navbar -->
+    <nav
+      class="flex justify-evenly bg-gradient-to-r from-blue-400 to-blue-600 text-white font-serif shadow-md shadow-blue-400"
+    >
+      <div
+        class="homeBtn flex flex-col justify-end lg:p-1 md:p-1 p-1 font-bold lg:text-2xl md:text-xl text-[0.8rem] border-b-4 border-black"
+      >
+        <a href="index.html">Table</a>
+      </div>
+      <div
+        class="tshadow lg:text-4xl md:text-3xl text-lg md:font-extrabold font-bold p-2"
+      >
+        PERIODIC TABLE
+      </div>
+      <div
+        class="gameBtn flex flex-col justify-end lg:p-1 md:p-1 p-1 font-bold lg:text-2xl md:text-xl text-[0.8rem]"
+      >
+        <a href="game.html">Game</a>
+      </div>
+    </nav>
+
+    <!-- Periodic Table -->
+    <!-- <section class="bg-[#a7e9db] p-3">
+      <div class="flex justify-between">
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+      </div>
+      <div class="flex justify-between">
+        <div class="flex">
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+        </div>
+        <div>
+          <ul
+            class="grid grid-cols-3 place-items-center borer border-black h-full w-[30vw] gap-0"
+          >
+            <li>jai</li>
+            <li>jai</li>
+            <li>jai</li>
+            <li>jai</li>
+            <li>jai</li>
+            <li>jai</li>
+          </ul>
+        </div>
+        <div class="flex">
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+        </div>
+      </div>
+      <div class="flex justify-between">
+        <div class="flex">
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+        </div>
+        <div>
+          <ul
+            class="grid grid-cols-3 place-items-center boder border-black h-full w-[30vw] gap-0"
+          >
+            <li>jai</li>
+            <li>jai</li>
+            <li>jai</li>
+            <li>jai</li>
+            <li>jai</li>
+            <li>jai</li>
+          </ul>
+        </div>
+        <div class="flex">
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+          <div class="smBox"></div>
+        </div>
+      </div>
+      <div class="flex">
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+      </div>
+      <div class="flex">
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+      </div>
+      <div class="flex">
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="bem">*</div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+      </div>
+      <div class="flex">
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="bem">**</div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+      </div>
+      <div class="flex mt-2 justify-end">
+        <div class="bem"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+      </div>
+      <div class="flex justify-end">
+        <div class="bem"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+        <div class="smBox"></div>
+      </div>
+    </section> -->
+    <!-- before:content-['1'] before:absolute before:-top-5 before:right-[50%] after:content-['1'] after:absolute after:top-[40%] after:-left-3 -->
+
+    <!-- Periodic Table -->
+    <section class="p-3 mx-auto lg:w-[98vw]">
+      <div class="ggd div1">
+        <!-- 1 -->
+        <!-- <div
+          class="w-full h-full text-center bg-gradient-to-r from-yellow-200 via-yellow-200 to-[yellow] box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-[0.9rem] lg:text-base text-[10px]"
+          >
+            45
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-semibold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div> -->
+
+        <!--  -->
+
+        <!-- <div
+          class="w-full h-full text-center  bg-gradient-to-r from-blue-100 via-blue-300 to-blue-400 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10 g2"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-blue-300 via-blue-500 to-blue-500 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-cyan-200 via-cyan-400 to-cyan-500 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            Na
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div class="w-full h-full gpr">
+          <ul
+            class="hidden md:grid lg:grid md:grid-cols-2 md:grid-rows-6 lg:grid-cols-3 lg:grid-rows-4 lg:mx-auto md:mx-auto items-center gap-x-5"
+          >
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[yellow] my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">Non Metals</h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[red] my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">Alkali Metals</h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[rgb(26,45,216)] my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">
+                Alkaline Earth Metals
+              </h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-cyan-500 my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">Transitional Metals</h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-green-600 my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">
+                Post Transitional Metals
+              </h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[orange] my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">Noble Gases</h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[cyan] my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">Lanthanide</h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-blue-300 my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">Actinide</h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-rose-400 my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">
+                Post-Transition Metals
+              </h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-violet-500 my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">Halogen</h1>
+            </li>
+            <li class="flex">
+              <span
+                class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-lime-400 my-auto"
+              ></span>
+              <h1 class="lg:text-md md:text-xs text-sm">Metalloid</h1>
+            </li>
+          </ul>
+        </div>
+        <div class="w-full h-full border border-black mb-3 g5"></div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-lime-200 via-lime-400 to-lime-400 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-green-300 via-green-500 to-green-500 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-cyan-100 via-cyan-300 to-cyan-300 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-pink-200 via-pink-300 to-pink-300 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-violet-300 via-violet-400 to-violet-400 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-orange-300 via-orange-400 to-orange-400 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div
+          class="w-full h-full text-center bg-gradient-to-r from-blue-100 via-blue-300 to-blue-400 box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10"
+        >
+          <div
+            class="lg:font-bold md:font-semibold font-normal md:text-base lg:text-base text-[10px]"
+          >
+            1
+          </div>
+          <div
+            class="lg:text-[1.4rem] lg:font-semibold md:text-[1.1rem] md:font-bold text-[0.7rem]"
+          >
+            H
+          </div>
+          <div class="text-[0.6rem] px-0.5 lg:block hidden">Rutherfordium</div>
+        </div>
+        <div class="w-full h-full border border-black mb-3 g5"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3 emp">*</div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3 emp">**</div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div> -->
+      </div>
+      <div class="ggd1 div2 mt-3">
+        <!-- <div class="w-full h-full border border-black mb-3 emp"></div>
+        <div class="w-full h-full border border-black mb-3 emp"></div>
+        <div class="w-full h-full border border-black mb-3 g11 emp">*</div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3 emp"></div>
+        <div class="w-full h-full border border-black mb-3 emp"></div>
+        <div class="w-full h-full border border-black mb-3 emp g11">**</div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div>
+        <div class="w-full h-full border border-black mb-3"></div> -->
+      </div>
+
+      <!--  -->
+
+      <div class="mt-3 md:hidden lg:hidden w-[80vw] mx-auto">
+        <ul class="grid grid-cols-3 grid-rows-4 mx-auto items-center gap-x-3">
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-[yellow] my-auto"
+            ></span>
+            <h1 class="text-[10px]">Non Metals</h1>
+          </li>
+
+          <!--  -->
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-[red] my-auto"
+            ></span>
+            <h1 class="text-[10px]">Alkali Metals</h1>
+          </li>
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-[rgb(26,45,216)] my-auto"
+            ></span>
+            <h1 class="text-[10px]">Alkaline Earth Metals</h1>
+          </li>
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-cyan-500 my-auto"
+            ></span>
+            <h1 class="text-[10px]">Transitional Metals</h1>
+          </li>
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-green-600 my-auto"
+            ></span>
+            <h1 class="text-[10px]">Metals</h1>
+          </li>
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-[orange] my-auto"
+            ></span>
+            <h1 class="text-[10px]">Noble Gases</h1>
+          </li>
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-[cyan] my-auto"
+            ></span>
+            <h1 class="text-[10px]">Lanthanide</h1>
+          </li>
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-blue-300 my-auto"
+            ></span>
+            <h1 class="text-[10px]">Actinide</h1>
+          </li>
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-rose-400 my-auto"
+            ></span>
+            <h1 class="text-[10px]">Post-Transition Metals</h1>
+          </li>
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-violet-500 my-auto"
+            ></span>
+            <h1 class="text-[10px]">Halogen</h1>
+          </li>
+          <li class="flex">
+            <span
+              class="border-2 border-black p-1 mr-1 h-3 bg-lime-400 my-auto"
+            ></span>
+            <h1 class="text-[10px]">Metalloid</h1>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Search -->
+    <section class="p-2 mx-auto lg:w-[98vw] md:mb-6 mb-2">
+      <div
+        class="font-serif lg:text-4xl md:text-3xl text-xl md:font-extrabold font-bold md:p-2 p-1 bg-gradient-to-r from-blue-400 to-blue-600 text-white lg:mb-7 md:mb-5 mb-3 border-y-2 border-white shadow-md shadow-blue-600 tshadow text-center"
+      >
+        SEARCH
+      </div>
+
+      <!--  -->
+
+      <div
+        class="grid md:grid-cols-3 grid-cols-3 justify-items-center mx-auto p-2 my-auto"
+      >
+        <!-- 1 -->
+
+        <div class="col-span-3 md:col-span-1 mb-3 md:mb-0">
+          <select
+            name="searchOption1"
+            id="searchOption1"
+            class="outline-none bg-transparent border-b-2 border-[rgb(73,145,204)] md:px-4 px-2 py-1 text-center md:text-lg text-base"
+          >
+            <option value="Atomic Number">Atomic Number</option>
+            <option value="Atomic Name">Atomic Name</option>
+            <option value="Symbol">Symbol</option>
+            <option value="State">State</option>
+            <option value="Bonding Type">Bonding Type</option>
+          </select>
+        </div>
+
+        <!-- 2 -->
+
+        <div
+          class="my-auto hidde mx-auto w-full bordr border-black md:col-span-1 col-span-2 srchInp"
+        >
+          <input
+            id="srchInp"
+            class="w-full md:px-4 px-3 md:py-2.5 py-1.5 outline-none rounded-2xl border-2 border-gray-500 transition-all duration-200 hover:border-2 hover:border-blue-700 hover:scale-[1.03] hover:transition-all hover:duration-200 focus:border-2 shadowo active:scale-[1]"
+            type="search"
+            placeholder="Search by Atomic Number"
+          />
+        </div>
+
+        <!-- 3 -->
+
+        <div class="hidden col-span-2 md:col-span-1">
+          <select
+            name="searchOption2"
+            id="searchOption2"
+            class="outline-none bg-transparent border-b-2 border-[rgb(73,145,204)] md:px-4 px-2 py-1 text-center text-base md:text-lg"
+          >
+            <option value="Solid">Solid</option>
+            <option value="Liquid">Liquid</option>
+            <option value="Gas">Gas</option>
+          </select>
+        </div>
+
+        <!-- 4 -->
+
+        <div class="hidden col-span-2 md:col-span-1">
+          <select
+            name="searchOption3"
+            id="searchOption3"
+            class="outline-none bg-transparent border-b-2 border-[rgb(73,145,204)] md:px-4 px-2 py-1 text-center text-base md:text-lg"
+          >
+            <option value="Atomic">Atomic</option>
+            <option value="Diatomic">Diatomic</option>
+            <option value="Covalent Network">Covalent Network</option>
+            <option value="Metallic">Metallic</option>
+          </select>
+        </div>
+
+        <!-- 5 -->
+
+        <div class="my-auto lg:mr-[40%] md:mr-[40%]">
+          <button
+            class="srchBtn p-2 px-3 border-2 border-gray-500 rounded-[50%] transtion duration-200 bg-white hover:border-2 hover:border-blue-700 hover:scale-[1.1] hover:transition-all hover:duration-200 active:scale-[1]"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Para -->
+      <div
+        class="para text-center mt-3 md:mt-5 bg-white p-3 py-5 md:p-5 rounded-lg shadow shadow-black"
+      >
+        <p class="md:text-2xl font-normal md:font-medium">
+          Search Element By Their Atomic No., Name, Symbol, Bonding Type, Block,
+          and State
+        </p>
+      </div>
+    </section>
+
+    <!-- Spinner -->
+    <div id="spinner" class="w-full mt-3 mb-3 hidden">
+      <div
+        class="animate-spin w-10 md:w-12 md:h-12 h-10 border-4 border-blue-300 rounded-full border-t-4 border-t-violet-800 mx-auto"
+      ></div>
+    </div>
+
+    <!-- Search Element Info -->
+    <section class="p-1 md:mb-5 mb-3 flex flex-col gap-3 srchEle">
+      <!-- <div class="md:p-4 p-2 bg-white rounded-lg md:w-[70vw] w-full mx-auto">
+        
+
+        <div
+          class="bg-gradient-to-r from-yellow-100 via-[yellow] to-[yellow] rounded-lg p-3 gap-3 shadow-sm shadow-black grid grid-cols-2 grid-rows-2 cursor-pointer hover:scale-[1.01] hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-black active:scale-[1]"
+        >
+          <h1 class="md:text-6xl text-3xl font-bold">H</h1>
+          <h2 class="place-self-end md:text-3xl lg:text-4xl text-lg font-bold">
+            1
+          </h2>
+          <h3 class="md:text-2xl text-lg font-bold">Hydrogen</h3>
+          <h3 class="md:text-2xl justify-self-end text-md font-semibold">
+            Nonmetal
+          </h3>
+        </div>
+
+        
+
+        <div
+          class="srchEleTog grid bg-gradient-to-r from-yellow-100 via-[yellow] to-[yellow] mt-3 p-2 px-3 rounded-lg md:text-[0.9rem] lg:text-lg text-xs gap-y-2 shadow-sm shadow-black"
+        >
+          <div class="flex justify-between">
+            <h3>Atomic Mass</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Electronic Configuration</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Electronegativity</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Atomic Radius</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Ion Radius</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Van Der Waals Radius</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Ionization Energy</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Electron Affinity</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Oxidation States</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Standard State</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Bonding Type</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Melting Point</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Boiling Point</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Density</h3>
+            <h3>jai</h3>
+          </div>
+          <div class="flex justify-between">
+            <h3>Year Discovered</h3>
+            <h3>jai</h3>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-r from-blue-400 to-blue-600 p-1 border-t-2 border-white text-center"
+    >
+      <h3 class="text-white">Created By Jeyadheesh</h3>
+    </footer>
+
+    <!-- Element Info -->
+    <section
+      class="fixed w-full h-full top-0 bg-[rgba(0,0,0,0.6)] p-3 hidden eleInfo z-20"
+    >
+      <!-- <div
+        class="w-full md:w-[40vw] mx-auto bg-white p-5 px-5 md:px-8 rounded-lg border-4 border-pink-600 relative"
+      > -->
+      <!-- 1 -->
+      <!-- <div
+          class="flex flex-col bg-gradient-to-r from-yellow-100 via-[yellow] to-[yellow] rounded-lg p-3 items-center gap-1.5 shadow-md shadow-black"
+        >
+          <h3 class="font-bold text-lg">1</h3>
+          <h3 class="text-3xl font-bold">H</h3>
+          <h3 class="font-semibold text-2xl">Hydrogen</h3>
+          <h3 class="font-semibold">Nonmetal</h3>
+        </div> -->
+
+      <!-- 2 -->
+      <!-- <div
+          class="grid mt-3 p-2 px-5 rounded-lg md:text-sm lg:text-lg text-xs shadow-sm shadow-black mx-auto overflow-y-scroll h-[62vh]"
+        >
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Atomic Mass</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Electronic Configuration</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Electronegativity</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Atomic Radius</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Ion Radius</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Van Der Waals Radius</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Ionization Energy</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Electron Affinity</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Oxidation States</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Standard State</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Bonding Type</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Melting Point</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Boiling Point</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Density</h3>
+            <h3>jai</h3>
+          </div>
+          <div
+            class="flex justify-between hover:bg-gray-200 hover:font-semibold hover:scale-105 py-1 px-2 hover:transition-all hover:duration-200 transition-all duration-200 hover:shadow-md hover:shadow-gray-200"
+          >
+            <h3>Year Discovered</h3>
+            <h3>jai</h3>
+          </div>
+        </div>
+
+        
+        <div class="absolute top-0 md:top-1 right-1">
+          <button
+            class="text-lg md:text-[1.35rem] text-sky-600 hover:scale-[1.15] hover:transition-all hover:duration-200 transition-all duration-200 active:scale-[1]"
+          >
+            <i class="fa-solid fa-circle-xmark"></i>
+          </button>
+        </div>
+      </div> -->
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
