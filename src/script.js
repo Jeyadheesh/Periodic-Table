@@ -1,3 +1,5 @@
+const loadingPage = document.querySelector(".loadingPage");
+loadpageSpin((spinNow = true));
 const div1 = document.querySelector(".div1");
 const div2 = document.querySelector(".div2");
 const srchEle = document.querySelector(".srchEle");
@@ -18,6 +20,11 @@ const getAllData = async () => {
   // console.log(jsonData);
   return jsonData;
 };
+
+function loadpageSpin(spinNow) {
+  if (spinNow) loadingPage.classList.remove("hidden");
+  else loadingPage.classList.add("hidden");
+}
 
 function createg5() {
   const pdiv = document.createElement("div");
@@ -127,9 +134,7 @@ async function createBox1(odata, atNo) {
       ${odata.name}
       </div>
   `;
-  // console.log(pdiv);
   div1.appendChild(pdiv);
-  //   console.log(pdiv);
 }
 
 async function createBox2(odata, atNo) {
@@ -274,6 +279,7 @@ async function addBoxes2() {
       await createBox2(datas[i], atNo);
     }
   }
+  loadpageSpin((spinNow = false));
 }
 
 //Search
@@ -378,19 +384,6 @@ function createSrchEle(odata) {
   setColor(odata, pdiv2);
 }
 
-// function toggleFunction() {
-//   const srchEleHead = document.querySelectorAll(".srchEleHead");
-//   const srchEleTog = document.querySelectorAll(".srchEleTog");
-//   console.log(srchEleHead);
-//   console.log(srchEleTog);
-//   srchEleHead.forEach((element) => {
-//     element.addEventListener("click", () => {
-//       const sibling = element.nextElementSibling;
-//       sibling.classList.toggle("hidden");
-//     });
-//   });
-// }
-
 function toggleFunction() {
   const srchEleHead = document.querySelectorAll(".srchEleHead");
   const srchEleTog = document.querySelectorAll(".srchEleTog");
@@ -405,15 +398,6 @@ function toggleFunction() {
     });
   }
 }
-
-// document.addEventListener("click", (e) => {
-//   console.log(e.target);
-//   if (e.target.classList.contains("srchEleHead" || "srchEleHeadElements")) {
-//     const sibling = e.target.nextSibling;
-//     console.log(sibling);
-//     sibling.classList.toggle("hidden");
-//   }
-// });
 
 srchInp.addEventListener("keyup", (e) => {
   if (e.key === "Enter") afterClick();
@@ -708,7 +692,3 @@ function spin(crt) {
   if (crt) spinner.classList.remove("hidden");
   else spinner.classList.add("hidden");
 }
-
-// homeBtn.addEventListener("click", () => {
-//   homeBtn.classList.add("border-b-4", "border-black");
-// });

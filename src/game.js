@@ -1,4 +1,5 @@
-// console.log("hai");
+const loadingPage = document.querySelector(".loadingPage");
+loadpageSpin((spinNow = true));
 const div1 = document.querySelector(".div1");
 const div2 = document.querySelector(".div2");
 var checkKey = false;
@@ -11,6 +12,11 @@ const getAllData = async () => {
   // console.log(jsonData);
   return jsonData;
 };
+
+function loadpageSpin(spinNow) {
+  if (spinNow) loadingPage.classList.remove("hidden");
+  else loadingPage.classList.add("hidden");
+}
 
 const getDataByAN = async (no) => {
   // console.log(no);
@@ -223,6 +229,7 @@ async function addBoxes2() {
       await createBox2(datas[i], atNo);
     }
   }
+  loadpageSpin((spinNow = false));
 }
 
 function userOption() {
@@ -307,10 +314,6 @@ async function playGame(divs, selectDifficulty) {
     highScore.classList.remove("hidden");
     var numScore = parseInt(score.innerText);
     setHighScore(numScore, highScore);
-    // var highSco = Math.max(...scores);
-    // console.log(scores);
-    // console.log(highSco);
-    // highScore.children[1].innerHTML = highSco;
     divs.forEach((div) => {
       div.classList.remove("bg-green-500", "bg-red-500", "wrong", "correct");
       div.classList.add(
@@ -338,16 +341,10 @@ function doOperation(odata) {
 function clickDiv(divs, ranEleText, allDatas, score) {
   try {
     if (checkKey) {
-      // var wrongAns = [];
-      // var CorectAns = [];
       divs.forEach((div) => {
-        // console.log("kjas");
         div.addEventListener("click", () => {
-          // div.children[2].classList.remove("hidden");
-
           var scrValue = parseInt(score.innerText);
           // console.log(div);
-          // console.log(scrValue);
           if (
             !stop &
             !div.classList.contains("wrong") &
@@ -356,7 +353,7 @@ function clickDiv(divs, ranEleText, allDatas, score) {
             div.children[2].classList.add("lg:block");
             const dat = div.getAttribute("data");
             const datt = JSON.parse(dat);
-            console.log(datt.name);
+            // console.log(datt.name);
             if (datt.name === ranEleText.innerText) {
               div.classList.remove("bg-gray-200");
               div.classList.add("bg-green-500");
@@ -364,6 +361,7 @@ function clickDiv(divs, ranEleText, allDatas, score) {
               scrValue += 50;
               score.innerText = scrValue;
               setTextColor(score);
+              // correctAns.push(div.children[0].innerText);
               setRandomName(allDatas, ranEleText);
               div.classList.remove(
                 "hover:scale-[1.18]",
@@ -371,15 +369,8 @@ function clickDiv(divs, ranEleText, allDatas, score) {
                 "active:scale-110"
               );
               div.classList.add("correct");
-              correctAns.push(div.children[0].innerText);
-              console.log(correctAns);
+              // console.log(correctAns);
               crtDiv(divs);
-              // wrongAns = [];
-              // console.log(wrongAns);
-              // CorectAns.push(div);
-              // stop = true;
-              // clearEle(divs,div);
-              // ranEleText.innerText = `${odata}`;
             } else {
               div.children[2].classList.add("lg:block");
               scrValue -= 50;
@@ -395,13 +386,6 @@ function clickDiv(divs, ranEleText, allDatas, score) {
               // wrongAns.push(div);
               // console.log(wrongAns);
             }
-            // } else if (stop) {
-            //   console.log("stooppes");
-            //   div.removeEventListener("click", this);
-            // divs.forEach((div) => {
-            //   div.classList.remove("bg-green-500", "bg-[red]");
-            //   div.classList.add("bg-gray-200");
-            // });
           }
         });
       });
@@ -450,12 +434,22 @@ function setTextColor(textDiv) {
 }
 
 async function setRandomName(allDatas, ranEleText) {
-  const randomNum = Math.floor(Math.random() * 118 + 1);
-  // correctAns.forEach((ans)={
-  //   if( randomNum = ans){}
-  // });
-  const randomData = allDatas[randomNum];
-  console.log(randomData.atomicNumber);
-  ranEleText.innerText = `${randomData.name}`;
-  return randomData.name;
+  let fixProblem = true;
+  let randomNum = Math.floor(Math.random() * 118);
+  let ranAnNo = randomNum + 1;
+  console.log(ranAnNo);
+  correctAns.forEach((ansu) => {
+    if (ranAnNo == ansu) {
+      console.log("Match");
+      fixProblem = false;
+    }
+  });
+  if (fixProblem) {
+    const randomData = allDatas[randomNum];
+    console.log(randomData.atomicNumber);
+    ranEleText.innerText = `${randomData.name}`;
+    correctAns.push(randomNum + 1);
+    console.log(correctAns);
+    return randomData.name;
+  } else setRandomName(allDatas, ranEleText);
 }
