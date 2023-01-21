@@ -31,7 +31,7 @@ const getDataByAN = async (no) => {
 
 async function createBox1(odata, atNo) {
   const pdiv = document.createElement("div");
-  pdiv.className = `sinBox w-full h-full text-center box  hover:transition-all hover:duration-200 transition-all duration-200  select-none active:scale-110 active:transition-all active:duration-200 hover:z-10  bg-gray-200 border border-black hover:scale-[1.18] cursor-pointer active:scale-110`;
+  pdiv.className = `sinBox w-full h-full text-center box  hover:transition-all hover:duration-200 transition-all duration-200  select-none lg:active:scale-110 active:transition-all active:duration-200 hover:z-10  bg-gray-200 border border-black lg:hover:scale-[1.18] cursor-pointer`;
   const obToSt = JSON.stringify(odata);
   // pdiv.setAttribute("onclick", `doOperation(${obToSt})`);
 
@@ -41,7 +41,7 @@ async function createBox1(odata, atNo) {
   if ((atNo === 57) | (atNo === 89)) {
     pdiv.classList.add("emp");
     pdiv.classList.remove("sinBox");
-    pdiv.innerHTML = `<div class="text-[1.4rem]">*</div>`;
+    pdiv.innerHTML = `<div class="text-[0.9rem] md:text-[1rem] lg:text-[1.4rem]">*</div>`;
     div1.appendChild(pdiv);
     return;
   }
@@ -64,14 +64,14 @@ async function createBox1(odata, atNo) {
 
 async function createBox2(odata, atNo) {
   const pdiv = document.createElement("div");
-  pdiv.className = `sinBox w-full h-full text-center box hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none active:scale-110 active:transition-all active:duration-200 hover:z-10 bg-gray-200 border border-black`;
+  pdiv.className = `sinBox w-full h-full text-center box lg:hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none lg:active:scale-110 active:transition-all active:duration-200 hover:z-10 bg-gray-200 border border-black`;
   const obToSt = JSON.stringify(odata);
   // pdiv.setAttribute("onclick", `doOperation(${obToSt})`);
 
   if ((atNo === 56) | (atNo === 88)) {
     pdiv.classList.add("emp", "g11");
     pdiv.classList.remove("sinBox");
-    pdiv.innerHTML = `<div class="text-[1.4rem]">*</div>`;
+    pdiv.innerHTML = `<div class="text-[0.9rem] md:text-[1rem] lg:text-[1.4rem]">*</div>`;
     div2.appendChild(pdiv);
     return;
   }
@@ -180,9 +180,9 @@ function createg5() {
       >
         <h3 class="hidden highScore">
           <span class="">Highscore : </span
-          ><span class="text-[green] font-bold">0</span>
+          ><span class="text-[blue] font-bold">0</span>
         </h3>
-        <h3 class="hidde ranEleText text-violet-500 text-lg font-semibold">
+        <h3 class="hidde ranEleText text-violet-500 lg:text-lg md:text-base text-xs font-semibold">
           Hydrogen
         </h3>
       </div>
@@ -191,7 +191,7 @@ function createg5() {
       >
         <h3>
           Score :
-          <span class="score text-[red] font-bold">0</span>
+          <span class="score text-[blue] font-bold">0</span>
         </h3>
       </div>
     </div>
@@ -237,26 +237,26 @@ function userOption() {
   const divs = document.querySelectorAll(".sinBox");
   // console.log(divs);
   playGame(divs, selectDifficulty);
-  selectDifficulty.addEventListener("click", () => {
+  selectDifficulty.addEventListener("change", () => {
     const sdValue = selectDifficulty.value;
 
     if (sdValue === "Easy") {
       divs.forEach((ele) => {
         // console.log(ele.children[0]);
-        ele.children[0].classList.remove("hidden");
-        ele.children[1].classList.remove("hidden");
+        ele.children[0].classList.remove("text-transparent");
+        ele.children[1].classList.remove("text-transparent");
       });
     } else if (sdValue === "Medium") {
       divs.forEach((ele) => {
         // console.log(ele.children[0]);
-        ele.children[0].classList.remove("hidden");
-        ele.children[1].classList.add("hidden");
+        ele.children[0].classList.remove("text-transparent");
+        ele.children[1].classList.add("text-transparent");
       });
     } else if (sdValue === "Hard") {
       divs.forEach((ele) => {
         // console.log(ele.children[0]);
-        ele.children[0].classList.add("hidden");
-        ele.children[1].classList.add("hidden");
+        ele.children[0].classList.add("text-transparent");
+        ele.children[1].classList.add("text-transparent");
       });
     }
   });
@@ -318,9 +318,9 @@ async function playGame(divs, selectDifficulty) {
       div.classList.remove("bg-green-500", "bg-red-500", "wrong", "correct");
       div.classList.add(
         "bg-gray-200",
-        "hover:scale-[1.18]",
+        "lg:hover:scale-[1.18]",
         "cursor-pointer",
-        "active:scale-110"
+        "lg:active:scale-110"
       );
       div.children[2].classList.remove("lg:block");
     });
@@ -358,15 +358,15 @@ function clickDiv(divs, ranEleText, allDatas, score) {
               div.classList.remove("bg-gray-200");
               div.classList.add("bg-green-500");
               // gameStart();
-              scrValue += 50;
+              scrValue += 100;
               score.innerText = scrValue;
               setTextColor(score);
               // correctAns.push(div.children[0].innerText);
               setRandomName(allDatas, ranEleText);
               div.classList.remove(
-                "hover:scale-[1.18]",
+                "lg:hover:scale-[1.18]",
                 "cursor-pointer",
-                "active:scale-110"
+                "lg:active:scale-110"
               );
               div.classList.add("correct");
               // console.log(correctAns);
@@ -379,9 +379,9 @@ function clickDiv(divs, ranEleText, allDatas, score) {
               div.classList.remove("bg-gray-200");
               div.classList.add("bg-red-500", "wrong");
               div.classList.remove(
-                "hover:scale-[1.18]",
+                "lg:hover:scale-[1.18]",
                 "cursor-pointer",
-                "active:scale-110"
+                "lg:active:scale-110"
               );
               // wrongAns.push(div);
               // console.log(wrongAns);
@@ -404,9 +404,9 @@ function crtDiv(divs) {
       // si.classList.remove("bg-green-500");
       div.classList.add(
         "bg-gray-200",
-        "hover:scale-[1.18]",
+        "lg:hover:scale-[1.18]",
         "cursor-pointer",
-        "active:scale-110"
+        "lg:active:scale-110"
       );
       div.classList.remove("wrong");
     }
@@ -437,10 +437,10 @@ async function setRandomName(allDatas, ranEleText) {
   let fixProblem = true;
   let randomNum = Math.floor(Math.random() * 118);
   let ranAnNo = randomNum + 1;
-  console.log(ranAnNo);
+  // console.log(ranAnNo);
   correctAns.forEach((ansu) => {
     if (ranAnNo == ansu) {
-      console.log("Match");
+      // console.log("Match");
       fixProblem = false;
     }
   });

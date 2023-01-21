@@ -12,6 +12,7 @@ const para = document.querySelector(".para");
 const eleInfo = document.querySelector(".eleInfo");
 const homeBtn = document.querySelector(".homeBtn");
 const gameBtn = document.querySelector(".gameBtn");
+const srchBlk = document.querySelector(".srchBlk");
 const spinner = document.querySelector("#spinner");
 
 const getAllData = async () => {
@@ -118,7 +119,7 @@ async function createBox1(odata, atNo) {
   }
   if ((atNo === 57) | (atNo === 89)) {
     pdiv.classList.add("emp");
-    pdiv.innerHTML = `<div class="text-[1.4rem]">*</div>`;
+    pdiv.innerHTML = `<div class="text-[0.9rem] md:text-[1rem] lg:text-[1.4rem]">*</div>`;
     div1.appendChild(pdiv);
     return;
   }
@@ -145,7 +146,7 @@ async function createBox2(odata, atNo) {
 
   if ((atNo === 56) | (atNo === 88)) {
     pdiv.classList.add("emp", "g11");
-    pdiv.innerHTML = `<div class="text-[1.4rem]">*</div>`;
+    pdiv.innerHTML = `<div class="text-[0.9rem] md:text-[1rem] lg:text-[1.4rem]">*</div>`;
     div2.appendChild(pdiv);
     return;
   }
@@ -291,7 +292,7 @@ const getDataByAN = async (no) => {
       no
   );
   const jsonData = await data.json();
-  console.log(jsonData);
+  // console.log(jsonData);
   if (jsonData.message != "does not exists") return jsonData;
 };
 // getDataByAN();
@@ -305,12 +306,12 @@ function createSrchEle(odata) {
   pdiv1.className = `srchEleHead rounded-lg p-3 gap-3 shadow-sm shadow-black grid grid-cols-2 grid-rows-2 cursor-pointer hover:scale-[1.01] hover:transition-all hover:duration-200 transition-all duration-200 active:scale-[1]`;
 
   pdiv1.innerHTML = `
-          <h1 class=" md:text-6xl text-3xl font-bold">${odata.symbol}</h1>
-          <h2 class=" place-self-end md:text-3xl lg:text-4xl text-lg font-bold">
+          <h1 class="  md:text-6xl text-3xl font-bold">${odata.symbol}</h1>
+          <h2 class="  place-self-end md:text-3xl lg:text-4xl text-lg font-bold">
             ${odata.atomicNumber}
           </h2>
-          <h3 class=" md:text-2xl text-lg font-bold">${odata.name}</h3>
-          <h3 class=" md:text-2xl justify-self-end text-md font-semibold capitalize">
+          <h3 class=" self-center   md:text-2xl text-lg font-bold">${odata.name}</h3>
+          <h3 class=" self-center md:text-2xl justify-self-end text-[0.9rem] font-bold capitalize">
             ${odata.groupBlock}
           </h3>`;
 
@@ -443,7 +444,7 @@ async function getDataByBonType(btype) {
   return jsonData;
 }
 
-searchOption1.addEventListener("click", () => {
+searchOption1.addEventListener("change", () => {
   const srchOp1 = searchOption1.value;
   if (srchOp1 === "State") {
     searchOption3.parentElement.classList.add("hidden");
@@ -475,7 +476,7 @@ async function afterClick() {
     const srchOp2 = searchOption2.value;
     const srchOp3 = searchOption3.value;
 
-    console.log(srchOp3);
+    // console.log(srchOp3);
     if (srchOp1 === "Atomic Number" && srchInp.value) {
       // para.classList.add("hidden");
       const srchInput = srchInp.value;
@@ -484,6 +485,9 @@ async function afterClick() {
       createSrchEle(srchData);
       toggleFunction();
       spin((crt = false));
+      srchBlk.scrollIntoView({
+        behavior: "smooth",
+      });
     }
     //
     else if (srchOp1 === "Atomic Name" && srchInp.value) {
@@ -493,6 +497,9 @@ async function afterClick() {
       createSrchEle(srchData);
       toggleFunction();
       spin((crt = false));
+      srchBlk.scrollIntoView({
+        behavior: "smooth",
+      });
     }
     //
     else if (srchOp1 === "Symbol" && srchInp.value) {
@@ -502,6 +509,9 @@ async function afterClick() {
       createSrchEle(srchData);
       toggleFunction();
       spin((crt = false));
+      srchBlk.scrollIntoView({
+        behavior: "smooth",
+      });
     }
     //
     else if (srchOp1 === "State") {
@@ -519,6 +529,9 @@ async function afterClick() {
       });
       toggleFunction();
       spin((crt = false));
+      srchBlk.scrollIntoView({
+        behavior: "smooth",
+      });
     }
     //
     else if (srchOp1 === "Bonding Type") {
@@ -538,6 +551,9 @@ async function afterClick() {
       });
       toggleFunction();
       spin((crt = false));
+      srchBlk.scrollIntoView({
+        behavior: "smooth",
+      });
     }
     //
     else {

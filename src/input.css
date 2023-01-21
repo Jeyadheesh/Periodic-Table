@@ -43,6 +43,8 @@
     font-size: 0.8rem;
     font-weight: bold;
     background-color: transparent;
+    user-select: none;
+    pointer-events: none;
 }
 
 .shadowo1:hover {
@@ -75,6 +77,8 @@
         text-align: center;
         font-size: 1rem;
         font-weight: bold;
+        user-select: none;
+        pointer-events: none;
     }
 
     .tshadow {
@@ -114,6 +118,8 @@
         text-align: center;
         font-size: 1.5rem;
         font-weight: bold;
+        user-select: none;
+        pointer-events: none;
     }
 
     .tshadow {
