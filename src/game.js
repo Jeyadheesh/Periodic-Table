@@ -31,7 +31,7 @@ const getDataByAN = async (no) => {
 
 async function createBox1(odata, atNo) {
   const pdiv = document.createElement("div");
-  pdiv.className = `sinBox w-full h-full text-center box  hover:transition-all hover:duration-200 transition-all duration-200  select-none lg:active:scale-110 active:transition-all active:duration-200 hover:z-10  bg-gray-200 border border-black lg:hover:scale-[1.18] cursor-pointer`;
+  pdiv.className = `sinBox w-full h-full text-center box  hover:transition-all hover:duration-200 transition-all duration-200  select-none md:active:scale-110 active:transition-all active:duration-200 hover:z-10  bg-gray-200 border border-black md:hover:scale-[1.18] cursor-pointer`;
   const obToSt = JSON.stringify(odata);
   // pdiv.setAttribute("onclick", `doOperation(${obToSt})`);
 
@@ -64,7 +64,7 @@ async function createBox1(odata, atNo) {
 
 async function createBox2(odata, atNo) {
   const pdiv = document.createElement("div");
-  pdiv.className = `sinBox w-full h-full text-center box lg:hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none lg:active:scale-110 active:transition-all active:duration-200 hover:z-10 bg-gray-200 border border-black`;
+  pdiv.className = `sinBox w-full h-full text-center box md:hover:scale-[1.18] hover:transition-all hover:duration-200 transition-all duration-200 cursor-pointer select-none md:active:scale-110 active:transition-all active:duration-200 hover:z-10 bg-gray-200 border border-black`;
   const obToSt = JSON.stringify(odata);
   // pdiv.setAttribute("onclick", `doOperation(${obToSt})`);
 
@@ -318,9 +318,9 @@ async function playGame(divs, selectDifficulty) {
       div.classList.remove("bg-green-500", "bg-red-500", "wrong", "correct");
       div.classList.add(
         "bg-gray-200",
-        "lg:hover:scale-[1.18]",
+        "md:hover:scale-[1.18]",
         "cursor-pointer",
-        "lg:active:scale-110"
+        "md:active:scale-110"
       );
       div.children[2].classList.remove("lg:block");
     });
@@ -364,9 +364,9 @@ function clickDiv(divs, ranEleText, allDatas, score) {
               // correctAns.push(div.children[0].innerText);
               setRandomName(allDatas, ranEleText);
               div.classList.remove(
-                "lg:hover:scale-[1.18]",
+                "md:hover:scale-[1.18]",
                 "cursor-pointer",
-                "lg:active:scale-110"
+                "md:active:scale-110"
               );
               div.classList.add("correct");
               // console.log(correctAns);
@@ -379,9 +379,9 @@ function clickDiv(divs, ranEleText, allDatas, score) {
               div.classList.remove("bg-gray-200");
               div.classList.add("bg-red-500", "wrong");
               div.classList.remove(
-                "lg:hover:scale-[1.18]",
+                "md:hover:scale-[1.18]",
                 "cursor-pointer",
-                "lg:active:scale-110"
+                "md:active:scale-110"
               );
               // wrongAns.push(div);
               // console.log(wrongAns);
@@ -404,11 +404,12 @@ function crtDiv(divs) {
       // si.classList.remove("bg-green-500");
       div.classList.add(
         "bg-gray-200",
-        "lg:hover:scale-[1.18]",
+        "md:hover:scale-[1.18]",
         "cursor-pointer",
-        "lg:active:scale-110"
+        "md:active:scale-110"
       );
       div.classList.remove("wrong");
+      div.children[2].classList.remove("lg:block");
     }
   });
 }

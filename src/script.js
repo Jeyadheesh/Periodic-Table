@@ -33,78 +33,78 @@ function createg5() {
   pdiv.innerHTML = `<ul
   class="hidden md:grid lg:grid md:grid-cols-2 md:grid-rows-6 lg:grid-cols-3 lg:grid-rows-4 lg:mx-auto md:mx-auto items-center gap-x-5"
 >
-  <li class="flex">
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[yellow] my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">Non Metals</h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[red] my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">Alkali Metals</h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[rgb(26,45,216)] my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">
       Alkaline Earth Metals
     </h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-cyan-500 my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">Transitional Metals</h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-green-600 my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">
       Metals
     </h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[orange] my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">Noble Gases</h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-[cyan] my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">Lanthanide</h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-blue-300 my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">Actinide</h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-rose-400 my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">
       Post-Transition Metals
     </h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-violet-500 my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">Halogen</h1>
-  </li>
-  <li class="flex">
+  </button>
+  <button class="flex">
     <span
       class="border-2 border-black lg:px-2 lg:mr-2 md:p-1 md:mr-1 md:h-3 lg:h-4 bg-lime-400 my-auto"
     ></span>
     <h1 class="lg:text-md md:text-xs text-sm">Metalloid</h1>
-  </li>
+  </button>
 </ul>`;
   div1.appendChild(pdiv);
 }
@@ -306,12 +306,12 @@ function createSrchEle(odata) {
   pdiv1.className = `srchEleHead rounded-lg p-3 gap-3 shadow-sm shadow-black grid grid-cols-2 grid-rows-2 cursor-pointer hover:scale-[1.01] hover:transition-all hover:duration-200 transition-all duration-200 active:scale-[1]`;
 
   pdiv1.innerHTML = `
-          <h1 class="  md:text-6xl text-3xl font-bold">${odata.symbol}</h1>
-          <h2 class="  place-self-end md:text-3xl lg:text-4xl text-lg font-bold">
+          <h1 class="md:text-6xl text-3xl font-bold">${odata.symbol}</h1>
+          <h2 class="place-self-end md:text-3xl lg:text-4xl text-lg font-bold">
             ${odata.atomicNumber}
           </h2>
-          <h3 class=" self-center   md:text-2xl text-lg font-bold">${odata.name}</h3>
-          <h3 class=" self-center md:text-2xl justify-self-end text-[0.9rem] font-bold capitalize">
+          <h3 class="self-center md:text-2xl text-lg font-bold">${odata.name}</h3>
+          <h3 class="self-center md:text-2xl justify-self-end text-[0.9rem] font-bold capitalize">
             ${odata.groupBlock}
           </h3>`;
 
